@@ -1,0 +1,20 @@
+{
+    "name": "SEU Background Changer",
+    "version": "1.0.0",
+    "description": "Change the background of any St. Ed's page",
+    "manifest_version": 3,
+    "author": "Megan Avery",
+    "action":{
+        "default_title": "SEU Background Changer"
+    },
+	    "content_scripts": [{
+		    "js": ["content.js"],
+            "css": ["content.css"],
+		    "matches": ["https://www.stedwards.edu/*"]
+  	}],
+    "icons": { 
+        "16": "icon.png",
+       "48": "icon.png",
+      "128": "icon.png" 
+    }
+}
